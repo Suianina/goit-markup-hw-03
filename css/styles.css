@@ -16,8 +16,40 @@ button {
     cursor: pointer
 }
 
+.container {
+    max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+ui {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
 
 /** ===============HEADER=============== */
+
+.container {
+    width: 1470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .header-logo {
     font-weight: 700;
@@ -70,6 +102,10 @@ button {
 /** ===============HERO=============== */
 
 .hero {
+}
+
+.hero-wrap {
+    padding: 188px 472px 292px 472px;
     background: #2e2f42;
 }
 
