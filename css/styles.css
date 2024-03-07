@@ -8,47 +8,68 @@ a {
     text-decoration: none;
 }
 
-ul, li {
+ul {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 button {
     cursor: pointer
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
-    max-width: 0;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6,p {
-    margin-bottom: 0;
-    margin-top: 0;
+    margin: 0;
 }
 
-ui {
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
 }
 
 
 /** ===============HEADER=============== */
 
-.container {
-    width: 1470px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border: 1px solid #000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 332px;
 }
 
 .header-logo {
@@ -59,10 +80,16 @@ ui {
     text-transform: uppercase;
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
+    margin-right: 76px;
 }
 
 .header-logo-part {
     color: #2e2f42;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-nav-link {
@@ -71,6 +98,8 @@ ui {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .header-nav-link:hover,
@@ -82,18 +111,23 @@ ui {
     font-style: normal;
 }
 
-.contacts-list {}
+.address-list {
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
+}
 
-.contacts-item {}
+.address-item {
+    }
 
-.contacts-link {
+.address-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.address-link:hover,
+.address-link:focus {
     color:#404BBF;
 }
 /** ================================== */
@@ -102,12 +136,21 @@ ui {
 /** ===============HERO=============== */
 
 .hero {
-}
-
-.hero-wrap {
     padding: 188px 472px 292px 472px;
     background: #2e2f42;
+    
+    }
+
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    }
+
+.hero-wrap {
+    
 }
+    
 
 .hero-title {
     font-weight: 700;
@@ -116,6 +159,10 @@ ui {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto;
+
 }
 
 .hero-buy-btn {
@@ -125,11 +172,29 @@ ui {
     letter-spacing: 0.04em;
     color: #fff;
     background: #4d5ae5;
+    padding: 16px 32px 16px 32px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    
+    
 }
-
 .hero-buy-btn:hover,
 .hero-buy-btn:focus {
     background: #404bbf;
+}
+
+.hero-buy-btn-wrap {
+margin-top: 48px;
+    margin-right: 635px;
+    margin-bottom: 188px;
+    margin-left: 636px;
+
+    padding: 48px 635px 188px 636px;
 }
 
 /** =================================== */
@@ -137,11 +202,29 @@ ui {
 
  /** ==============FEATURES============ */
  
- .features {}
+ .features {
+    padding-top: 120px;
+    padding-right: 156px;
+    padding-left: 156px;
+    padding-bottom: 120px;
+ }
 
- .features-list {}
+.features-container {
+    display: flex;
+    align-items: center;
+}
 
- .features-item {}
+.features-list {
+    max-width: 264px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+ }
+
+ .features-item {
+    width: calc((100% - 3 * 24px) / 4);
+ }
 
  .features-subtitle {
     font-weight: 500;
@@ -149,7 +232,8 @@ ui {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
- }
+    margin-bottom: 8px;
+    
 
  .features-item-text {
         font-size: 16px;
@@ -164,6 +248,13 @@ ui {
 
  .team {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
+
+ .team-container {
+    display: flex;
+    align-items: center;
  }
 
  .team-title {
@@ -173,14 +264,26 @@ ui {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    color: #2e2f42;}
+    color: #2e2f42;
+    max-width: 162px;
+    padding: 120px 639px 72px 639px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+
+}
  
  .team-list {
     background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 24px;
  }
 
  .team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0 0 4px 4px;
+    padding: 0 0 32px 0;
  }
 
  .team-image {}
@@ -205,6 +308,17 @@ ui {
 
 /** ==============PORTFOLIO============ */
 
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding: 120px 611px 72px 455px;
+}
+
+.portfolio-container {
+    display: flex;
+    align-items: center;
+}
+
  .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -213,11 +327,23 @@ ui {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    max-width: 218px;
+    margin: 0 auto;
+    margin-bottom: 72px;
  }
 
- .portfolio-list {}
+ .portfolio-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    padding-left: 156px;
+    padding-right: 156px;
+ }
 
- .portfolio-item {}
+ .portfolio-item {
+    width: calc((100% - 5 * 24px) / 6);
+ }
 
  .portfolio-subtitle {
     font-weight: 500;
@@ -239,6 +365,14 @@ ui {
 
 .footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border: 1px solid #000;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center; 
 }
 
 .footer-logo {
@@ -270,5 +404,7 @@ ui {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
+    margin: 0 auto;
 }
 /** =================================== */
