@@ -58,7 +58,7 @@ address {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
+.container-header {
     display: flex;
     align-items: center; 
 }
@@ -148,8 +148,8 @@ address {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    margin left: 0 auto;
-    margin-right: 0 auto;
+    margin left: auto;
+    margin-right: auto;
     margin-bottom: 48px;
 }
 
@@ -160,7 +160,6 @@ address {
     letter-spacing: 0.04em;
     color: #fff;
     background: #4d5ae5;
-    padding: 16px 32px 16px 32px;
     border-radius: 4px;
     padding: 16px 32px;
     display: flex;
@@ -254,14 +253,12 @@ address {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     align-items: center;
-    margin-top: 72px;
-    margin-bottom: 120px;
  }
  
  .team-image {}
 
  .team-data {
-    margin: 32px 16px;
+    padding: 32px 16px;
     align-items: center;
  }
 
@@ -273,7 +270,7 @@ address {
     text-align: center;
     color: #2e2f42;
     margin: 0 auto;
-    margin: 32px 8px;
+    margin-bottom: 8px;
  }
 
  .team-item-text {
@@ -283,7 +280,6 @@ address {
     text-align: center;
     color: #434455;
     margin-top: 8px;
-    margin-bottom: 32px;
  }
 /** =================================== */
 
@@ -320,17 +316,11 @@ address {
     align-items: center;
     gap: 48px 24px;
     background: #fff;
-    margin: 72px 156px 77px 156px;
  }
 
  .portfolio-item {
-   align-items: center;
     width: calc((100% - 24px * 2) / 3);
-    max-width: 360px;
     background: #fff;
-    border: 1px solid #e7e9fc;
-    margin-top: 72px;
-    margin-bottom: 48px;
  }
 
  .portfolio-image {}
@@ -340,6 +330,7 @@ address {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     gap: 48px 24px;
+    padding: 32px 16px;
  }
 
  .portfolio-subtitle {
@@ -348,8 +339,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin: 0 auto;
-    margin: 32px 64px;
+    margin-bottom: 8px;
 }
 
  .portfolio-item-text {
@@ -358,8 +348,9 @@ address {
     letter-spacing: 0.02em;
     color: #434455;
     margin: 0 auto;
-    margin: 8px 32px;
- }
+    margin-bottom: 32px;
+    }
+ 
   
  /** =================================== */
 
