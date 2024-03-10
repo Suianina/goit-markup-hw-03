@@ -148,7 +148,7 @@ address {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    margin left: auto;
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
 }
@@ -187,10 +187,7 @@ address {
     padding-bottom: 120px;
  }
 
-.container {
-    display: flex;
-    align-items: center;
-}
+.container {}
 
 .features-list {
     display: flex;
@@ -227,10 +224,7 @@ address {
     padding: 120px 0;
    }
 
- .container {
-    display: flex;
-    align-items: center;
- }
+ .container {}
 
  .team-title {
     font-weight: 700;
@@ -294,10 +288,7 @@ address {
     border: 1px solid #e7e9fc;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-}
+.container {}
 
  .portfolio-title {
     font-weight: 700;
@@ -362,10 +353,7 @@ address {
     background: #2e2f42;
 }
 
-.container {
-    display: flex;
-    align-items: center; 
-}
+.container {}
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -388,8 +376,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    display: flex;
-    align-items: center;
+    max-width: 264px;
     margin-top: 16px;
 }
 /** =================================== */
