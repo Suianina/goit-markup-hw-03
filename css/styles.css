@@ -55,9 +55,7 @@ address {
 /** ===============HEADER=============== */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border: 1px solid #000;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -135,18 +133,12 @@ address {
 /** ===============HERO=============== */
 
 .hero {
-    padding: 188px 472px 292px 472px;
+    padding: 188px 0;
     background: #2e2f42;
     }
 
 
-.hero-container {
-    display: flex;
-    align-items: center;
-    }
-
-.hero-wrap {}
-    
+.hero-container {}
 
 .hero-title {
     font-weight: 700;
@@ -155,9 +147,10 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin-bottom: 48px;
     max-width: 496px;
-    margin: 0 auto;
+    margin left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .hero-buy-btn {
@@ -173,7 +166,7 @@ address {
     display: flex;
     margin: 0 auto;
     align-items: center;
-    margin-top: 48px;
+  
     }
 
 .hero-buy-btn:hover,
@@ -191,29 +184,27 @@ address {
  /** ==============FEATURES============ */
  
  .features {
-    padding: 120px 156px 156px 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
  }
 
-.features-container {
+.container {
     display: flex;
     align-items: center;
 }
 
 .features-list {
     display: flex;
-    align-items: center;
     gap: 24px;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    flex-wrap: wrap; 
  }
 
  .features-item {
-    max-width: 264px;
     width: calc((100% - 3 * 24px) / 4);
     }
 
  .features-subtitle {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -221,7 +212,6 @@ address {
     margin-bottom: 8px;
  }
     
-
  .features-item-text {
     font-size: 16px;
     line-height: 1.5;
@@ -239,7 +229,7 @@ address {
     padding-bottom: 120px;
    }
 
- .team-container {
+ .container {
     display: flex;
     align-items: center;
  }
@@ -326,10 +316,7 @@ address {
     margin: 0 auto;
     margin: 163px 611px 72px 611px;
  }
-
-
-         
-
+   
  .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -338,7 +325,6 @@ address {
     background: #fff;
     margin: 72px 156px 77px 156px;
  }
-
 
  .portfolio-item {
    align-items: center;
@@ -358,7 +344,6 @@ address {
     border-right: 1px solid #e7e9fc;
     gap: 48px 24px;
  }
-
 
  .portfolio-subtitle {
     font-weight: 500;
@@ -393,9 +378,6 @@ address {
     display: flex;
     align-items: center; 
 }
-
-.footer-wrap {}
-   
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
