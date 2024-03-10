@@ -58,7 +58,7 @@ address {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-container {
+.container {
     display: flex;
     align-items: center; 
 }
@@ -138,7 +138,7 @@ address {
     }
 
 
-.hero-container {}
+.container {}
 
 .hero-title {
     font-weight: 700;
@@ -148,8 +148,8 @@ address {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    margin left: auto;
-    margin-right: auto;
+    margin left: 0 auto;
+    margin-right: 0 auto;
     margin-bottom: 48px;
 }
 
@@ -224,9 +224,8 @@ address {
  /** ==============TEAM============ */
 
  .team {
-    background: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background-color: #f4f4fd;
+    padding: 120px 0;
    }
 
  .container {
@@ -241,14 +240,12 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin: 120px 639px 72px 639px;
+    margin-bottom:  72px;
 }
 
  .team-list {
     display: flex;
-    align-items: center;
     gap: 24px;
-    margin: 72px 156px 120px 156px;
 }
 
  .team-item {
@@ -301,7 +298,7 @@ address {
     border: 1px solid #e7e9fc;
 }
 
-.portfolio-container {
+.container {
     display: flex;
     align-items: center;
 }
@@ -314,7 +311,7 @@ address {
     text-align: center;
     color: #2e2f42;
     margin: 0 auto;
-    margin: 163px 611px 72px 611px;
+    margin-bottom: 72px;
  }
    
  .portfolio-list {
@@ -374,7 +371,7 @@ address {
     background: #2e2f42;
 }
 
-.footer-container {
+.container {
     display: flex;
     align-items: center; 
 }
@@ -402,7 +399,6 @@ address {
     color: #f4f4fd;
     display: flex;
     align-items: center;
-    max-width: 264px;
     margin-top: 16px;
 }
 /** =================================== */
