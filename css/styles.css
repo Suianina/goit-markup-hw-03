@@ -340,8 +340,6 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin: 0 auto;
-    margin-bottom: 32px;
     }
  
   
@@ -366,7 +364,6 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 1020px;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -382,6 +379,5 @@ address {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
-    margin-top: 16px;
 }
 /** =================================== */
