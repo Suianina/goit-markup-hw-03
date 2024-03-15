@@ -98,11 +98,28 @@ address {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4 0 0.2 1);
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
     color: #404BBF;
+}
+
+.current {
+position: relative;
+color: #404BBF;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
 }
 
 .address {
@@ -122,6 +139,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4 0 0.2 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -135,6 +153,11 @@ address {
 .hero {
     padding: 188px 0;
     background: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: 
+    
     }
 
 
@@ -151,6 +174,7 @@ address {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
+    
 }
 
 .hero-buy-btn {
@@ -280,6 +304,23 @@ address {
     color: #434455;
     margin-top: 8px;
  }
+
+
+
+
+
+.team-item-icon {
+    fill: none;
+    
+    fill: #4d5ae5;
+    fill: FFFFFF;
+    width="40"
+        height="40"
+}
+
+
+
+
 /** =================================== */
 
 
