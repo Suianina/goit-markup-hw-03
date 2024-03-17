@@ -156,9 +156,7 @@ color: #404BBF;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: 
-    
-    }
+ }
 
 
 .container {}
@@ -319,7 +317,7 @@ team-icon {
     width: calc((100% - 3 * 24px) / 4);
     justify-content: center;
     width: 232px;
-    padding-top: 8px 
+    padding-top: 8px;
     padding-bottom: 32px;
 }
 
